@@ -29,11 +29,6 @@ public class EntityRightClickListener implements Listener {
     Entity entity = e.getRightClicked();
     Player p = e.getPlayer();
 
-    if(singleUse.contains(p)) {
-      singleUse.remove(p);
-      return;
-    }
-    singleUse.add(p);
 
     if(!(entity instanceof Villager)) {
       return;
@@ -56,8 +51,9 @@ public class EntityRightClickListener implements Listener {
     Villager villager = (Villager) entity;
     UUID villagerUuid = villager.getUniqueId();
     if(!villagerList.contains(villagerUuid) && villager.isAdult()
-    && !villager.getInventory().contains(new ItemStack(Material.BREAD), 3)) {
+    && !villager.getInventory().contains(Material.BREAD, 1)) {
       villager.setBreed(true);
+      villager.getInventory().clear();
       villager.getInventory().addItem(new ItemStack(Material.BREAD, 3));
       e.setCancelled(true);
       mainHandItemStack.setAmount(mainHandItemStack.getAmount() -1);
