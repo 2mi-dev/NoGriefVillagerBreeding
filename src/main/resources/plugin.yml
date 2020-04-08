@@ -1,0 +1,21 @@
+name: NoGriefVillagerBreeding
+version: "0.1"
+api-version: "1.15"
+description: "Enables villager breeding by right click with specific item."
+
+author: NavyOtter
+website: https://otter.navy/
+
+main: navy.otter.nogriefvillagerbreeding.NoGriefVillagerBreedingPlugin
+database: false
+depend: []
+softdepend: []
+
+permissions:
+  NoGriefVillagerBreeding.breedItem:
+    description: "Gives the breed item"
+    default: op
+
+commands:
+  nogriefvillagerbreeding:
+    aliases: ["ngvb"]

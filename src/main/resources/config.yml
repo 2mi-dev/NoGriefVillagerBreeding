@@ -1,0 +1,16 @@
+breed-item-type: "APPLE"
+breed-item-lore:
+  - "&7Bringt einen Villager"
+  - "&7dazu sich zu vermehren."
+  - "&cAchtung! &7Es müssen trotzdem"
+  - "&7genug Betten vorhanden sein!"
+breed-item-name: "Villager-Apfel"
+
+#Cooldown in seconds until the villager is ready to breed
+villager-breed-cooldown: 30
+
+msg-prefix: "&8[&4»&8]&7 "
+inventory-full-msg: "Dein Inventar ist voll, Befehl abgebrochen."
+
+#message to display if villager is child, already has bread or cooldown has not passed
+villager-not-ready-to-breed-msg: "Der hier braucht wohl noch etwas Ruhe."
