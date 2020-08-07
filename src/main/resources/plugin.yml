@@ -1,6 +1,6 @@
 name: NoGriefVillagerBreeding
 version: "0.1"
-api-version: "1.15"
+api-version: "1.16"
 description: "Enables villager breeding by right click with specific item."
 
 author: NavyOtter
